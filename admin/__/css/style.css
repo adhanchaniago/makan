@@ -1,0 +1,286 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+/* Login */
+.login{
+  width: 100%;
+  height: 100%;
+  background-color: #ff5151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login form h1{
+  text-align: center;
+  margin: 10px;
+  font-style: italic;
+  color: white;
+}
+.login form div input{
+  width: 200px;
+  padding: 5px;
+  margin: 5px 10px;
+  border-radius: 3px;
+  border: 0;
+}
+.btn-login{
+  padding: 5px 10px;
+  margin: 5px 20px;
+  background-color: #4baeec;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 0 0 2px red;
+  cursor: pointer;
+}
+
+/* Navigasi */
+nav{
+  width: 100%;
+  height: 70px;
+  background-color: #862121;
+}
+nav .brand{
+  line-height: 70px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+nav .brand:hover{
+  text-shadow:  0 0 5px lightskyblue;
+}
+
+nav .menu{
+  display: inline-block;
+  list-style: none;
+  margin: 5px 10px;
+}
+nav .menu li{
+  display: inline;
+}
+nav .menu li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+nav .menu li a:hover{
+  border-bottom: 2px groove white;
+}
+
+nav .logout{
+  line-height: 70px;
+  padding: 0px 20px;
+  float: right;
+  text-decoration: none;
+  color: white;
+}
+
+/* Error 404 */
+.blank{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Main */
+.main{
+  width: 100%;
+  height: 80%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main h1{
+  margin: 10px;
+}
+
+/* Produk */
+.produk{
+  width: 100%;
+  min-height: 90%;
+  background-color: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.daftarProduk{
+  background-color: white;
+  margin: 20px 10px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.daftarProduk h1{
+  text-align: center;
+  margin: 10px;
+}
+.daftarProduk table{
+  border-collapse: collapse;
+  margin: 10px 20px;
+}
+.daftarProduk table tr th,
+.daftarProduk table tr td{
+  border: 1px solid grey;
+  padding: 3px 5px;
+}
+.daftarProduk table tr th{
+  background-color: #e95a5a;
+  color: white;
+}
+.daftarProduk table tr:nth-child(odd){
+  background-color: #dedede;
+}
+.fotoDaftarProduk{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.btn-edit, .btn-hapus{
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 5px 2px;
+  color: white;
+  text-decoration: none;
+}
+.btn-edit{
+  background-color: orange;
+}
+.btn-hapus{
+  background-color: salmon;
+}
+.btn-tambah{
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  background-color: lightskyblue;
+}
+
+.tambahProduk{
+  height: auto;
+  padding: 10px;
+  margin: 20px 10px;
+  background-color: white;
+  border-radius: 3px;
+}
+.tambahProduk h1{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tamProduk .namaproduk input,
+.rp{
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  margin-left: 20px;
+  margin-right: 0;
+}
+.tamProduk .hargaproduk input{
+  margin: 5px 0;
+  padding: 5px;
+  width: 166px;
+}
+.tamProduk .deskripsiproduk{
+  display: flex;
+}
+.tamProduk .deskripsiproduk textarea{
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+  padding: 5px;
+}
+.tamProduk .fotoproduk  input{
+  margin: 5px;
+  margin-left: 30px;
+}
+.btn-tambahP{
+  padding: 5px 10px;
+  background-color: salmon;
+  color: white;
+  border-radius: 3px;
+  border: 0;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+/* Transaksi */
+.transaksi{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.transaksi h1,
+.transaksi h4{
+  text-align: center;
+  margin: 10px;
+}
+.transaksi table{
+  border-collapse: collapse;
+  margin: 10px;
+}
+.transaksi table tr:nth-child(odd){
+  background-color: #dedede;
+}
+.transaksi table tr th{
+  background-color: #f63434;
+  color: white;
+}
+.transaksi table tr th,
+.transaksi table tr td{
+  border: 1px solid grey;
+  padding: 5px 10px;
+}
+
+/* Riwayat */
+.riwayat{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.riwayat h1{
+  text-align: center;
+  margin: 10px;
+}
+.riwayat table{
+  border-collapse: collapse;
+  margin: 10px;
+}
+.riwayat table tr:nth-child(odd){
+  background-color: #dedede;
+}
+.riwayat table tr th{
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: #f63434;
+  color: white;
+}
+.riwayat table tr td{
+  padding: 5px;
+  border: 1px solid grey;
+}
